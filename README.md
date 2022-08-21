@@ -4,7 +4,7 @@ Here you can see the projects on which I had the opportunity to work on my own a
 ## Breast Cancer Detection
 In the folder [Breast Cancer Detection](https://github.com/ivannasavonik/Projects/tree/main/Breast%20Cancer%20Detection) you find the Matlab project on the Breast Cancer Detection (Variables Machine Learning binary models (LDA, QDA, SVM, Logistic Regerssion, Naive Bayes Classifier, Classification trees, Random Forests) and feature selection and reduction methods were applied on Matlab. We also optimized the hyperparameters in order to obtain the best results.
 
-## Web appliaction with Flask
+## [Web application with Flask](https://github.com/ivannasavonik/Projects/tree/main/Web%20application%20with%20Flask)
 
 In this folder you can find a university project which consisted of colaborating with multile students with git, creating own environments and creating an own web aaplication. Our web application is able to do the text summarization, translation and sscrappring (for the fist two we used Hugging FAce pretraoned models). We also introduce some unit tests. The folder contains its own [README.md](https://github.com/ivannasavonik/Projects/blob/main/Web%20application%20with%20Flask/README.md) file with more detailed description.
 
