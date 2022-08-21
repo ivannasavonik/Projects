@@ -20,5 +20,5 @@ The [Opioid use abuse](https://github.com/ivannasavonik/Projects/tree/main/Opioi
 ## [Cython Project](https://github.com/ivannasavonik/Projects/tree/main/Cython%20Project)
 
 This folder contains a University Project which consisted in optimizing the computation time of a KNN algorithm using parallelization in Cython.
-## Other porjects 
+## Other projects 
 You can also find the document on the business plan called 'backery_project.pdf'. It is a business plan on a 'green, ecological and local' backery. It is not a Machine Learning project.
