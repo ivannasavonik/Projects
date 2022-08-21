@@ -17,5 +17,8 @@ The second project aims to analyze the reviews from Disnelyland customers all ov
 ## Opioid use abuse prediction
 The [Opioid use abuse](https://github.com/ivannasavonik/Projects/tree/main/Opioid%20use%20abuse) folder contanins a Python project on the binary classification. In this project we applied supervised and unsupervised machine learning techniques, as well as tried to apply Lasso, Ridge and Elastic net regularization in order to select the most relevant features. As supervised Machine Learning techniques we used LDA, SVM, Random Forests, Logistic Regression and we also applied some Deep Learning Techniques including Artificial Neural Networks. As the unsupervised technique we used the KNN clustering. The dataset used for this project is huge and contains some missing values, whith what we dealt in this project. The target variabe is unbalanced, thus we use some undersampling techniques to balance the dataset and specific metrics in order to correctly evaluate the performance of our algorithms.
 
+## {Cython Project](https://github.com/ivannasavonik/Projects/tree/main/Cython%20Project)
+
+This folder contains a University Project which consisted in optimizing the computation time of a KNN algorithm using parallelization in Cython.
 ## Other porjects 
 You can also find the document on the business plan called 'backery_project.pdf'. It is a business plan on a 'green, ecological and local' backery. It is not a Machine Learning project.
