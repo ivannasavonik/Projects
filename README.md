@@ -6,7 +6,7 @@ In the folder [Breast Cancer Detection](https://github.com/ivannasavonik/Project
 
 ## Web appliaction with Flask
 
-In this folder you can find a university project which consisted of colaborating with multile students with git, creating own environments and creating an own web aaplication. Our web application is able to do the text summarization, translation and sscrappring (for the fist two we used Hugging FAce pretraoned models).
+In this folder you can find a university project which consisted of colaborating with multile students with git, creating own environments and creating an own web aaplication. Our web application is able to do the text summarization, translation and sscrappring (for the fist two we used Hugging FAce pretraoned models). We also introduce some unit tests. The folder contains its own [README.md](https://github.com/ivannasavonik/Projects/blob/main/Web%20application%20with%20Flask/README.md) file with more detailed description.
 
 
 ## [NLP Projects](https://github.com/ivannasavonik/Projects/tree/main/NLP%20Projects)
