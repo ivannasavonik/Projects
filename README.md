@@ -2,7 +2,7 @@
 Here you can see the projects on which I had the opportunity to work on my own and with my classmates during my graduate studies.
 
 ## Breast Cancer Detection
-In the folder 'Breast Cancer' you find the Matlab project on the Breast Cancer Detection (Variables Machine Learning binary models (LDA, QDA, SVM, Logistic Regerssion, Naive Bayes Classifier, Classification trees, Random Forests) and feature selection and reduction methods were applied on Matlab. We also optimized the hyperparameters in order to obtain the best results.
+In the folder [Breast Cancer Detection](https://github.com/ivannasavonik/Projects/tree/main/Breast%20Cancer%20Detection) you find the Matlab project on the Breast Cancer Detection (Variables Machine Learning binary models (LDA, QDA, SVM, Logistic Regerssion, Naive Bayes Classifier, Classification trees, Random Forests) and feature selection and reduction methods were applied on Matlab. We also optimized the hyperparameters in order to obtain the best results.
 
 ## Web appliaction with Flask
 
