@@ -1,0 +1,62 @@
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  /* Style tab links */
+  .tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+  }
+  
+  .tablink:hover {
+    background-color: #777;
+  }
+  
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+  }
+  
+  #Accueil {background-color: whitesmoke; }
+  #Scrapping {background-color: whitesmoke;}
+  #Traduction {background-color: whitesmoke;}
+  #Résumé {background-color: whitesmoke;}
+
+  .writing{
+    color: rgb(65, 41, 46);
+    background-color: whitesmoke;
+    }
+
+  .textbox {
+    width: 500px;
+    height: 300px;
+    border: 2px solid #555;
+    padding: 15px;
+    margin: 20px;
+    position: relative
+  }
+
+  .output_box {
+    width: 400px;
+    height: 200px;
+    /* border: 1px solid #555; */
+    padding: 50px;
+    margin: 20px;
+    position: relative;
+    text-align: justify;
+    font-size: 18px;
+    color:rgb(65, 41, 46);
+  }

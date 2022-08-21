@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<!--  Load CSS in Flask with html-->
+<link rel="stylesheet" href='/static/stat1.css' />
+
+<!--  Load JavaScript in Flask with html-->
+<script type="text/javascript" src='/static/main.js'>  </script> 
+
+
+<!--  Activate tab buttons with html-->
+<div class="tab">
+  <button class="tablink" onclick="openPage('Accueil', this, 'green')" id="defaultOpen">Accueil</button>
+  <button class="tablink" onclick="openPage('Scrapping', this, 'orange')">Scrapping</button>
+  <button class="tablink" onclick="openPage('Traduction', this, 'orange')">Traduction</button>
+  <button class="tablink" onclick="openPage('Résumé', this, 'orange')">Résumé</button>
+</div>
+
+<!-- Activate default tab upon start -->
+<body onload="document.getElementById('defaultOpen').click();"> 
+
+
+<div id="Accueil" class="tabcontent">
+  <h3 class="writing">Accueil</h3>
+  <p class="writing"></h2>Nous vous présentons ici notre application web. Bonne visite !</p>
+</div>
+
+
+<div id="Scrapping" class="tabcontent">
+  <h3 class="writing">Scrapping</h3>
+  <p class="writing">Récupérez ici de longs éléments de texte.</p>
+
+  <div style="background-color: whitesmoke; width:100%; float:left; height:400px;">
+    <!--  Input box : entrer un mot -->
+    <div style="background-color: rgb(190, 187, 187); width:50%; height:100%; float:left;">
+      <form action="" method = "POST" id="scrap_form"> 
+        <input style="margin:50px; position:relative; left:30px; top:30px"
+                type="text" id="scrap_in" name="scrap_in" placeholder="Words or URLs">
+        <input style="position:relative; top:30px" type="submit" value="Submit">
+      </form>
+    </div>
+
+    <!--  Output box -->
+    <div style="background-color: rgb(190, 187, 187); width:50%; height:100%; float:left; overflow-y:auto;">
+      <output_box class="output_box" type="text" id="scrap_out" name="scrap_out">
+      {{output[0]}} </output_box>
+    </div>
+  </div>
+</div>
+
+
+<div id="Traduction" class="tabcontent">
+  <h3 class="writing">Traduction</h3>
+  <p class="writing">Entrez ici votre texte à traduire :</p>
+
+  <div style="background-color: whitesmoke; width:100%; float:left; height:400px;">
+    <div style="background-color: rgb(190, 187, 187); width:50%; height:100%; float:left;">
+      <form action="nlp" method = "POST">
+        <input class="textbox" type="text" id="trad_in" name="trad_in">
+        <input type="submit" value="Translate">
+      </form>
+    </div>
+    <!--  Output box -->
+    <div style="background-color: rgb(190, 187, 187); width:50%; height:100%; float:left; overflow-y:auto;">
+      <output_box class="output_box" type="text" id="trad_out" name="trad_out">
+      {{output[1]}} </output_box>
+    </div>
+  </div>
+</div>
+
+
+<div id="Résumé" class="tabcontent">
+  <h3 class="writing">Résumé</h3>
+  <p class="writing">Entrez ici votre texte à résumer :</p>
+
+  <div style="background-color: whitesmoke; width:100%; float:left; height:400px;">
+    <div style="background-color: rgb(190, 187, 187); width:50%; height:100%; float:left;">
+      <form action="nlp" method = "POST">
+        <input class="textbox" type="text" id="res_in" name="res_in">
+        <input type="submit" value="Shorten">
+      </form>
+    </div>
+    <!--  Output box -->
+    <div style="background-color: rgb(190, 187, 187); width:50%; height:100%; float:left; overflow-y:auto;">
+      <output_box class="output_box" type="text" id="res_out" name="res_out">
+      {{output[2]}} </output_box>
+    </div>
+  </div>
+</div>
+
+
+
+</body>

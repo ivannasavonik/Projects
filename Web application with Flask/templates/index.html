@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<!--  Load CSS in Flask with html-->
+<link rel="stylesheet" href='/static/stat1.css' />
+
+<!--  Load JavaScript in Flask with html-->
+<script type="text/javascript" src='/static/main.js'>  </script>
+
+
+<!--  Activate tab buttons with html-->
+<div class="tab">
+  <button class="tablink" onclick="openPage('Accueil', this, 'green')" id="Accueil_button">Accueil</button>
+  <button class="tablink" onclick="openPage('Scrapping', this, 'orange')" id="Scrapping_button">Scrapping</button>
+  <button class="tablink" onclick="openPage('Traduction', this, 'orange')" id="Traduction_button">Traduction</button>
+  <button class="tablink" onclick="openPage('Résumé', this, 'orange')" id="Résumé_button">Résumé</button>
+</div>
+
+<!-- Activate default tab upon start -->
+<script type="text/javascript"> mybuttonId = myFunc('{{ buttonId }}') </script>
+<body onload="document.getElementById( mybuttonId ).click();">
+
+
+<div id="Accueil" class="tabcontent">
+  <h3 class="writing">Accueil</h3>
+  <p class="writing">Nous vous présentons ici notre application web. Bonne visite !</p>
+  <br>
+  <p class="writing">Quelques mises en garde avant de commencer votre nativation ! Le scrapping fonctionne de la façon
+    suivante. On entre un mot ou un url faisant référence à une page Wikipedia. On peut également chercher dans le
+    Wikipedia français si on le souhaite. La traduction et le résumé prennent un peu de temps à tourner.
+    Nous vous demandons donc un peu patience 😃.</p>
+</div>
+
+
+<div id="Scrapping" class="tabcontent">
+  <h3 class="writing">Scrapping</h3>
+  <p class="writing">Récupérez ici de longs éléments de texte.</p>
+
+  <div style="background-color: whitesmoke; width:100%; float:left; height:400px;">
+    <!--  Input box : entrer un mot -->
+    <div style="background-color: rgb(190, 187, 187); width:50%; height:100%; float:left;">
+      <form action="" method = "POST" id="scrap_form">
+        <label style="color:rgb(65, 41, 46); position:relative; left:80px; top:20px"
+               for="scrapping_language_checkbox">Scrapper dans le Wikipedia français :</label>
+        <input style="margin:50px; position:relative; left:20px; top:20px"
+               type="checkbox" id="scrapping_language_checkbox" name="scrapping_language" value="french">
+        <input style="margin:50px; position:relative; left:30px; top:30px"
+                type="text" id="scrap_in" name="scrap_in" placeholder="Words or URLs">
+        <input style="position:relative; top:30px" type="submit" value="Submit">
+      </form>
+    </div>
+
+    <!--  Output box -->
+    <div style="background-color: rgb(190, 187, 187); width:50%; height:100%; float:left; overflow-y:auto;">
+      <output_box class="output_box" type="text" id="scrap_out" name="scrap_out">
+      {{output[0]}} </output_box>
+    </div>
+  </div>
+</div>
+
+
+<div id="Traduction" class="tabcontent">
+  <h3 class="writing">Traduction</h3>
+  <p class="writing">Entrez ici votre texte à traduire :</p>
+  <br>
+  <div style="background-color: whitesmoke; width:100%; float:left; height:500px;">
+    <div style="background-color: rgb(190, 187, 187); width:50%; height:100%; float:left;">
+      <form action="" method = "POST">
+        <label style="color:rgb(65, 41, 46); position:relative; left:20px; top:10px"
+               for="translate_fr_to_en_checkbox">Traduire du français à l'anglais :</label>
+        <input style="position:relative; left:10px; top:10px"
+               type="checkbox" id="translate_fr_to_en_checkbox" name="translate_fr_to_en" value="fr_to_en">
+        <textarea class="textbox" type="text" id="trad_in" name="trad_in" rows="10" cols="30" style="font-family: Arial"></textarea>
+        <br>
+        <input style="position:relative; left:230px" type="submit" value="Translate">
+        <!-- Rounded switch -->
+      </form>
+    </div>
+    <!--  Output box -->
+    <div style="background-color: rgb(190, 187, 187); width:50%; height:100%; float:left; overflow-y:auto;">
+      <output_box class="output_box" type="text" id="trad_out" name="trad_out">
+      {{output[1]}} </output_box>
+    </div>
+  </div>
+</div>
+
+
+<div id="Résumé" class="tabcontent">
+  <h3 class="writing">Résumé</h3>
+  <p class="writing">Entrez ici votre texte à résumer :</p>
+
+  <div style="background-color: whitesmoke; width:100%; float:left; height:400px;">
+    <div style="background-color: rgb(190, 187, 187); width:50%; height:100%; float:left;">
+      <form action="" method = "POST" >
+        <textarea class="textbox" type="text" id="res_in" name="res_in" rows="10" cols="30" style="font-family: Arial"></textarea>
+        <br>
+        <input style="position:relative; left:230px" type="submit" value="Shorten">
+      </form>
+    </div>
+    <!--  Output box -->
+    <div style="background-color: rgb(190, 187, 187); width:50%; height:100%; float:left; overflow-y:auto;">
+      <output_box class="output_box" type="text" id="res_out" name="res_out">
+      {{output[2]}} </output_box>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
