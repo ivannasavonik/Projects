@@ -6,7 +6,7 @@ In the folder 'Breast Cancer' you find the Matlab project on the Breast Cancer D
 
 ## NLP Projects
 The [LDA.ipynb](https://github.com/ivannasavonik/Projects/blob/main/NLP%20Projects/LDA.ipynb) is a Jupyter Notebook containing a little project on topic modelling with the NLP. It consists of applying an unsupervised machine learning technique called Latent Dirichlet Allocation in order to find different topics in the wine reviews. The project includes multiple text preprocessing steps including tokenization, bigrams and trigrams, ponctuation removal etc.
-The second project aims to analyze the reviews from Disnalyland customers all over the world. The analysis part mostly consistas of texte preprocessing and analysis of bigrams, trigrams, but some topic modelling algorithms were also used in order to find the ropics which appear the most often in reviews. You can find the whole description in a [disneyland.ipynb](https://github.com/ivannasavonik/Projects/blob/main/NLP%20Projects/disneland.ipynb).
+The second project aims to analyze the reviews from Disnelyland customers all over the world. The analysis part mostly consistas of texte preprocessing and analysis of bigrams, trigrams, but some topic modelling algorithms were also used in order to find the ropics which appear the most often in reviews. You can find the whole description in a [disneyland.ipynb](https://github.com/ivannasavonik/Projects/blob/main/NLP%20Projects/disneland.ipynb).
 
 
 ## Opioid use abuse prediction
